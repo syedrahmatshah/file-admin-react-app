@@ -24,19 +24,21 @@ const Sidebar = () => {
                   ? "w-full flex items-center rounded-l-[10px] bg-white py-4 gap-4 backdrop-filter-[10px]"
                   : "flex items-center text-white gap-3 pr-4 py-2"
               }>
-              <Icon
-                className={({ isActive }) =>
-                  isActive
-                    ? " text-white w-12 h-10 p-2 bg-[#6ABDE6] shadow-[4px_4px_4px_0px_#00000040] rounded-l-[10px] rounded-tr-[10px] -ml-4 "
-                    : " text-[#434343]"
-                }
-              />
-              <span
-                className={({ isActive }) =>
-                  isActive ? "text-[#434343]" : "text-white"
-                }>
-                {label}
-              </span>
+              {({ isActive }) => (
+                <>
+                  <Icon
+                    className={
+                      isActive
+                        ? " text-white w-12 h-11 p-2 bg-[#6ABDE6] shadow-[4px_4px_4px_0px_#00000040] rounded-l-[10px] rounded-tr-[10px] -ml-4 "
+                        : " text-[#434343]"
+                    }
+                  />
+
+                  <span className={isActive ? "text-[#434343]" : "text-white"}>
+                    {label}
+                  </span>
+                </>
+              )}
             </NavLink>
             {index === 6 && (
               <div className='border-b-2 border-[#6ABDE6] w-40 mt-10 mb-1'></div>

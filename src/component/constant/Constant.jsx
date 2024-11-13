@@ -17,7 +17,7 @@ import {
 } from "../../assets/icons/Icons";
 
 export const sidebarItems = [
-  { to: "/", icon: CgAdd, label: "NEW CLIENT" },
+  { to: "/new-client", icon: CgAdd, label: "NEW CLIENT" },
   { to: "/my-client", icon: MyClient, label: "MY CLIENTS" },
   { to: "/prospecting", icon: Prospecting, label: "PROSPECTING" },
   { to: "/billing", icon: BillingIcon, label: "BILLING" },

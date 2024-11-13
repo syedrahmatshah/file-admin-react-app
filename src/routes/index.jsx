@@ -4,7 +4,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../component/layout";
 import Dashboard from "../pages/Dashboard";
-import MyClient from "../pages/MyClient";
+import NewClient from "../pages/NewClient";
 
 const RouteLayout = () => {
   return (
@@ -16,8 +16,8 @@ const RouteLayout = () => {
             element={<Dashboard />}
           />
           <Route
-            path='/my-client'
-            element={<MyClient />}
+            path='/new-client'
+            element={<NewClient />}
           />
         </Route>
       </Routes>
